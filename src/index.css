@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+html,
+body,
+#root {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+
+	background:
+		radial-gradient(
+			circle at top right,
+			#19b6ff 0%,
+			#0d418c 45%,
+			#082f69 100%
+		);
+
+	background-attachment: fixed;
+}
+
+body[data-theme="dark"] {
+  background:
+    radial-gradient(
+      circle at top right,
+      #163A74 0%,
+      #0B1E40 50%,
+      #061126 100%
+    );
+}
