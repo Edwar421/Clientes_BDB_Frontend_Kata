@@ -166,7 +166,7 @@ const captureElementAsImage = async (elementId: string): Promise<CapturedImage |
             height: canvas.height,
         };
     } catch (error) {
-        console.error(`No se pudo capturar el elemento ${elementId} para PDF`, error);
+        console.error(`No se pudo capturar el elemento ${elementId} para PDF `, error);
         return null;
     }
 };
